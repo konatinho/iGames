@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230a0a0a%27/%3E%3Ctext x=%2732%27 y=%2746%27 font-size=%2744%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27%23F5A623%27 font-family=%27sans-serif%27%3Ei%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>iGames — jogos grátis no navegador</title>
+  <meta name="description" content="Jogue jogos grátis direto no navegador, no celular ou no computador. Sem downloads.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="iGames">
+  <meta property="og:title" content="iGames — jogos grátis no navegador">
+  <meta property="og:description" content="Jogue jogos grátis direto no navegador, no celular ou no computador.">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <header class="header"><div class="container header__in">
+    <a class="logo" href="index.html" aria-label="iGames — página inicial"><span class="logo__i">i</span>Games</a>
+    <form class="busca" role="search" action="index.html" method="get">
+      <label class="sr-only" for="busca">Buscar jogos</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="busca" name="q" type="search" placeholder="Buscar jogos" autocomplete="off">
+    </form></div></header>
+  <main class="container">
+    <section class="hero">
+      <h1>Jogue agora, direto no navegador.</h1>
+      <p>Sem downloads e sem cadastro. Escolha um jogo e comece em segundos.</p>
+    </section>
+    <div class="chips" id="chips" role="group" aria-label="Filtrar por categoria"></div>
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <h2 class="secao-titulo">Todos os jogos</h2><span id="contagem" class="autor" aria-live="polite"></span>
+    </div>
+    <section class="grade" id="grade" aria-live="polite"></section>
+  </main>
+  <footer class="footer"><div class="container">© iGames — jogos de navegador</div></footer>
+  <script src="js/comum.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

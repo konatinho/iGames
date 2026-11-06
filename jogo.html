@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%230a0a0a%27/%3E%3Ctext x=%2732%27 y=%2746%27 font-size=%2744%27 font-weight=%27800%27 text-anchor=%27middle%27 fill=%27%23F5A623%27 font-family=%27sans-serif%27%3Ei%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Jogo — iGames</title>
+  <meta name="description" content="Jogue grátis no iGames.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="iGames">
+  <meta property="og:title" content="iGames">
+  <meta property="og:description" content="Jogue grátis no iGames.">
+</head>
+<body>
+  <header class="header"><div class="container header__in">
+    <a class="logo" href="index.html" aria-label="iGames — página inicial"><span class="logo__i">i</span>Games</a>
+    <form class="busca" role="search" action="index.html" method="get">
+      <label class="sr-only" for="busca">Buscar jogos</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="busca" name="q" type="search" placeholder="Buscar jogos" autocomplete="off">
+    </form></div></header>
+  <main class="container">
+    <a class="voltar" href="index.html">← Todos os jogos</a>
+    <div class="moldura" id="moldura">
+      <button class="btn moldura__sair" id="btnSair" type="button" aria-label="Sair da tela cheia">✕ Sair</button>
+      <iframe id="frame" title="Jogo" allow="fullscreen; autoplay; gamepad" allowfullscreen></iframe>
+    </div>
+    <section class="jogo-info">
+      <div class="jogo-info__topo">
+        <h1 id="nome">Carregando…</h1>
+        <button class="btn" id="btnTela" type="button" aria-label="Jogar em tela cheia">⛶ Tela cheia</button>
+      </div>
+      <div><span class="tag" id="categoria"></span></div>
+      <p id="descricao"></p>
+      <p class="autor">Adicionado por: <strong id="autor"></strong></p>
+    </section>
+    <section class="mais" aria-labelledby="mais-t">
+      <h2 class="secao-titulo" id="mais-t">Mais jogos</h2>
+      <div class="grade" id="grade" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© iGames — jogos de navegador</div></footer>
+  <script src="js/comum.js"></script>
+  <script src="js/jogo.js"></script>
+</body>
+</html>

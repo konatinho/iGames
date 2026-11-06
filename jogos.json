@@ -1,0 +1,12 @@
+[
+  {
+  "id": "tetris",
+  "nome": "Tetris",
+  "descricao": "Tetris suave e viciante, com combos, efeitos e sons.",
+  "autor": "Wei",
+  "categoria": "Puzzle",
+  "thumb": "assets/thumbs/tetris.jpg",
+  "caminho": "jogos/tetris/index.html"
+}
+]
+
