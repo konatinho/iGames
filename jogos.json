@@ -7,6 +7,15 @@
   "categoria": "Puzzle",
   "thumb": "assets/thumbs/tetris.jpg",
   "caminho": "jogos/tetris/index.html"
+},
+{
+  "id": "osu",
+  "nome": "Osu!",
+  "descricao": "Jogo de ritmo desafiador com modos de jogo variados.",
+  "autor": "konato",
+  "categoria": "Musical",
+  "thumb": "assets/thumbs/osu.jpg",
+  "caminho": "jogos/osu/index.html"
 }
 ]
 
